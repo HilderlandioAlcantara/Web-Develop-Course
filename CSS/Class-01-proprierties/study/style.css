@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+   body{
+    
+  }
+  #id {
+    
+    
+  }
+
+  h1 {
+    font-family: 'Rubik Dirt';
+    color: #F29544;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .texto{
+    
+    color: white;
+
+    text-shadow: 1px 1px 1px black;
+  }
+  p{
+    font-size: 24px;
+  }   
+ 
+  
+  main{
+    background-image: url("../challenge/image/clash.jpg");
+
+    height: auto;
+    width: 720px;
+
+    box-shadow: #73451D;
+    border-radius: 16px;
+    padding: 48px;
+
+    }
+
+    img{
+      height: auto;
+
+    }

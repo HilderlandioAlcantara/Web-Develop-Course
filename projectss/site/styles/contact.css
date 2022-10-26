@@ -1,0 +1,28 @@
+@import url(style.css);
+
+.Formulario{
+text-align: center;
+background-color: bisque;
+
+}
+
+.inputBox{
+    background-color: cadetblue;
+
+}
+.Form-contact{
+    /* background-color: coral; */
+border-color: blueviolet;
+}
+
+@media (min-width: 480px) {
+    .Form-contact{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+
+    }
+
+    }
+    
+    

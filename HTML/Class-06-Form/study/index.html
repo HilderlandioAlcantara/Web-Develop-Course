@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Formulario </title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="" method="get">
+            <br>
+            <section>
+                <label for="name">
+                    Nome: </label>
+                <input type="name" id="name" required autocomplete="escreve ozorio">
+
+                <br>
+            </section><br>
+            <section>
+
+                <label for="birth">DT </label>
+                <input type="date" id="birth" name="nascimento"><br>
+            </section><br>
+
+            <button type="submit">Enviar</button>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>tipos input </legend>
+                <form action="">
+                    <label for="fruits"> Frutas </label>
+                    <input type="text" id="fruits" name="frutas" list="list-fruits">
+                    <datalist id="list-fruits">
+                        <option value="pera"></option>
+                        <option value="Manga"></option>
+                        <option value="Uva"></option>
+                    </datalist>
+                    <button type="submit">Enviar </button>
+                </form>
+
+            </fieldset>
+            <br>
+
+        </form>
+
+        <fieldset>
+            <form action="">
+                <label for="email">E-mail </label>
+                <input type="email" autocomplete="email" name="email">
+                <button type="text"> Enviar</button>
+        </fieldset>
+        </form>
+        <section>
+            <label for="">cpf</label><br>
+            <input type="number">
+            <button type="submit">enviar</button>
+
+        </section>
+    </fieldset>
+
+    <br>
+
+    <h1>Segunda parte</h1>
+    <form action="">
+        <fieldset>
+            <legend>Arquivos </legend>
+            <label for="photo">Foto</label>
+            <input type="file" id="photo" name="photo" accept="image/">
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>filmes</legend>
+            <section>
+                <input type="checkbox" name="titanic" id="titanic">
+                <label for="titanic">Titanic</label>
+            </section>
+
+            <section>
+                <input type="checkbox" name="lagoa" id="lagoa">
+                <label for="lagoa">Lagoa Azul</label>
+            </section>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Termos de uso </legend>
+            <label for="yes">Sim </label>
+            <input type="radio" id="yes" name="term">
+            <label for="not">Não </label>
+            <input type="radio" id="not" name="term">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea name="obs" id="obs" cols="30" rows="10" placeholder="escrevE Ozorio"
+            maxlength="250"
+            wrap="soft">
+            </textarea>
+        </fieldset>
+        <button type="submit">enviar </button>
+        <br>
+    </form>
+</body>
+
+</html>

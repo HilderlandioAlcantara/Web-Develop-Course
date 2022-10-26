@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url("../Class-02-Box-Model/style.css");
+@font-face {
+    font-family: MyFonte;
+    src: url("Fonts/Homer_Simpson_Revised.ttf");
+}
+
+@font-face {
+    font-family: PS2;
+    src: url("Fonts/zrnic\ rg.ttf");
+}
+article{
+    font-display: initial;
+    gap: 48px;
+    animation-name: MyAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: inherit;
+    animation-direction: alternate-reverse;
+    animation-name: MyAnima;
+    animation-direction: reverse;
+    animation-duration: 2s;
+
+}
+h3{
+    font-family: MyFonte;
+    font-size: 100px;
+
+}
+/* Criar classe h3.ps pois ja existe um h3 */
+h3.ps{
+    font-family: PS2;
+    font-size: 32px;
+}
+
+@media (max-width: 640px) {
+    article {
+        
+    }
+}
+
+    @keyframes MyAnimation {
+        0%{
+            opacity: 0;
+        }
+        /* 50%{}       */
+        
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes MyAnima {
+        0%{
+            opacity: 0;
+        }
+        /* 50%{}       */
+        
+        100%{
+            opacity: 1;
+        }
+    }
+
+

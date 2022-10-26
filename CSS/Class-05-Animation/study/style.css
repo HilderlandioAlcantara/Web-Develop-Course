@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+h1:hover {
+    color: aqua;
+    text-shadow: azure;
+    transition: 1s;
+    background-color: darkgoldenrod;
+}
+
+h2.hover{
+    color: blueviolet;
+}
+
+.square{
+    height: fit-content;
+    width: fit-content;
+    padding: 32px;
+    background-color: brown;
+    transition: 2s;
+}
+
+.square:hover{
+    transform: rotate(360deg);
+    background-color: darkgoldenrod;
+    
+}

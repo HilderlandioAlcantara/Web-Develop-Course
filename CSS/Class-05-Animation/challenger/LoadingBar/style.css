@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-load{
+    border: 16px solid grey;
+
+    border-top-color: aquamarine;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    
+    animation-name: RotaLoad;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.label-load{
+    position: absolute;
+}
+
+@keyframes RotaLoad{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

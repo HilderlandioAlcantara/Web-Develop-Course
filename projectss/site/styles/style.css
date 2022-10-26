@@ -1,0 +1,218 @@
+:root {
+    font-size: 6.25%;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16rem;
+    height: 100vh;
+    width: 100%;
+    
+    background:linear-gradient(lightgray, lightgreen);
+}
+
+header {
+    padding: 24rem;
+
+    width: 100%;
+    height: 20vh;
+
+    background: linear-gradient(brown, rgb(187, 97, 55));
+
+    display: flex;
+    
+    gap: 8rem;
+
+    align-items: center;   
+}
+
+header img{
+    width: 20%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+#homeMenu,
+#articleMenu,
+#contactMenu
+{
+    color: green;
+}
+
+nav ul{
+    width: 200rem;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 18rem;
+    
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8rem;
+    border-radius: 4rem;
+}
+
+nav ul li:hover{   background: rgba(190, 228, 195, 0.064);
+}
+
+.showBarImages {
+    width: 100%;
+    height: 280rem;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.showImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0;
+
+    animation: showBarImageAnimation 15s;
+    animation-iteration-count: infinite;
+}
+
+.showImage:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.showImage:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.showImage:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.boxPlans{
+    animation: top
+}
+
+main{
+    color: blue;
+}
+.cards{
+    max-width: 1240px;
+    padding: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto;
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
+
+}
+
+aside{
+    padding: 16rem;
+}
+.card{
+    box-shadow: 15rem 15rem 25rem 15rem rgba(23, 42, 36, 0.446);
+    overflow: hidden;
+    border-radius: 8rem;
+    text-align: center;
+    transition: transform 300ms; border-color: 32rem;
+
+}
+
+.card:hover{
+    transform: scale(1.1,0.98);
+    filter: brightness(1.2, 0.99);
+
+}
+a{
+    color: brown;
+    text-decoration: none;
+}
+
+.card .parte2{
+    padding: 8rem;
+    line-height: 8rem;
+} 
+
+/* .observa{
+    margin-top: auto;
+} */
+/* .card .parte2 button {
+    color:blue;
+    background-color: brown;
+    text-decoration: none; */
+/* } */
+.card img{
+    width: 100%;
+    height: 250rem;
+    object-fit: cover;
+}
+.country {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+}
+main h2{
+    margin-top: 32rem;
+    background: linear-gradient(rgb(25, 106, 84) white);
+}
+
+.country img{
+    width: 100%;
+    height: 100%;
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 32rem;
+    background: linear-gradient(brown, rgb(187, 97, 55));
+ width: 100%;
+ height: 100%;
+
+}
+
+footer img {
+    width: 30%;
+    border-radius: 50%;
+
+}
+footer iframe{
+    width: 80%;
+    height: 320rem;
+}
+@keyframes showBarImageAnimation {
+    25% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    50% {
+        /* transform: translate(-100%); */
+        opacity: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    header img {
+        width: 80rem;
+    }
+}
+
+

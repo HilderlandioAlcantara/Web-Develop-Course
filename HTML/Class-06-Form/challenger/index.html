@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-Desafio-06 </title>
+</head>
+<style>
+    .area-51 {
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    .area-lingua{
+        background-color: brown;
+    }
+</style>
+<body>
+    <header>
+        <h1>Crie Seu Perfil</h1>
+
+
+
+    </header>
+    <main>
+        <form action="">
+            <fieldset class="area-51" >
+                <label for="name">Nome Completo</label>
+                <input type="name" id="name" autocomplete="escreve" autofocus>
+                <br>
+                <label for="date">nascimento</label><br>
+                <input type="date" id="date">
+                <br>
+                <label for="number">RG</label><br>
+                <input type="number" id="number">
+                <br>
+                <label for="number">CPF</label>
+                <input type="number" id="number">
+                <br>
+                <section>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" id="masc" name="sexo">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" id="fem" name="sexo">
+                </section>
+
+            </fieldset>
+            <fieldset class="area-lingua">
+            <legend>Linguagem de Domínio</legend>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="java">
+            <label for="java">JavaScript</label>
+            <input type="checkbox" id="sql">
+            <label for="sql">SQL</label>
+            <br>
+        </fieldset>
+
+            <fieldset class="area-dados">
+                <legend>Dados do Email </legend>
+                <label for="email">E-mail </label><br>
+                <input type="email" placeholder="escreve ozorio"><br>
+                <label for="pass">Password </label><br>
+                <input type="password" id="pass" minlength="8"><br>
+
+                <label for="photo"> Fotos </label>
+                <input type="file" id="photo" accept="image*/" name="photo">
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Observações</legend>
+
+                <label for="obs"></label>
+                <textarea name="" id="obs" cols="30" rows="10" placeholder="escreve Ozorio" maxlength="250"></textarea>
+            
+            </fieldset>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar </button>
+        </form>
+    </main>
+</body>
+
+</html>

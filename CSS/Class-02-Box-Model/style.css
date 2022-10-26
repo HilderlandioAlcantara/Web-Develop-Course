@@ -1,0 +1,84 @@
+/* * Seletor de reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    position: sticky;
+    top: 48px;
+}
+h1 {
+
+    font-size: 72px;
+    color: chocolate;
+    font-style: italic;
+    position: sticky;
+    top: 48px;
+
+}
+p{
+font-size: 72px;
+top: 72px;
+}
+
+    main{
+        height: 50vh;
+        width: 50vw;
+        border: solid 2px;
+        padding: 16px;
+        display:flex;
+        justify-content: space-around;
+        /* justify-content:space-between; */
+        align-items: center;
+        gap: initial;
+        position: relative;
+    }
+div{
+    height: 180px;
+    width: 180px;
+    border: solid 10px
+    ;
+    color: blue;
+    font-size: 48px;
+
+    padding: 16px;
+    margin: 16px;
+
+    /* display: inline-block; */
+    /* flex-wrap: wrap */
+}
+    .square1{
+        background-color: cadetblue;
+        z-index: 2;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+        /* bottom: 8px; */
+        /* right: 1rem; */
+
+        font-style: italic;
+        /* box-sizing: border-box; colocar o tamnho real em pixels*/
+    }
+.square2{
+        background-color: green;
+        box-sizing: border-box;
+        position: absolute;
+        left: 32px;
+        top: 32px;
+        z-index: 1;
+
+        
+    }
+    .square3{
+        background-color: coral;
+        box-sizing: border-box;
+        position: absolute;
+        left: 52px;
+        top: 52px;
+        z-index: 0;
+    }
